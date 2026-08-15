@@ -43,3 +43,7 @@ student-portal/
 └── src/
     └── [additional source files]
 ```
+
+## License
+
+This project is provided for educational purposes. The source code may be used, modified, and studied as permitted by the terms of the license included with the repository.
