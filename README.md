@@ -25,3 +25,9 @@ For a project containing `main.cpp`, run:
 ```bash
 g++ -std=c++17 main.cpp -o student-portal
 ```
+## Running the Application
+
+After successfully compiling the project, run the generated executable from the project directory.
+```bash
+./student-portal
+```
