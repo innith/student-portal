@@ -15,3 +15,13 @@ Verify that the compiler is installed by running:
 
 ```bash
 g++ --version
+```
+## Build Instructions
+
+To build the Student Portal application, open a terminal in the project directory and compile the source files using `g++`.
+
+For a project containing `main.cpp`, run:
+
+```bash
+g++ -std=c++17 main.cpp -o student-portal
+```
