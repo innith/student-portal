@@ -31,3 +31,15 @@ After successfully compiling the project, run the generated executable from the 
 ```bash
 ./student-portal
 ```
+## Project Structure
+
+The project is organized to keep source code, documentation, and version-control configuration easy to understand.
+
+```text
+student-portal/
+├── README.md
+├── .gitignore
+├── main.cpp
+└── src/
+    └── [additional source files]
+```
