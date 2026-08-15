@@ -17,3 +17,11 @@ string stringTrimmer(const string &text)
   }
   return text.substr(start, end - start);
 }
+
+bool isValidEmail(const string &email)
+{
+  size_t atPosition = email.find('@');
+  size_t dotPosition = email.find('.', atPosition);
+  return atPosition != string::npos && dotPosition != string::npos && atPosition > 0 &&
+         dotPosition > atPosition + 1 && dotPosition < email.length() - 1;
+}
