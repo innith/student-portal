@@ -3,7 +3,8 @@
 
 void printWelcomeMessage()
 {
-    std::cout << "  welcome to the Student PORTAL !!! " << std::endl;
+
+    std::cout << "Welcome to the Student Portal ! " << std::endl;
 }
 
 void greetUser()
