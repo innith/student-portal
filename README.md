@@ -3,9 +3,6 @@
 Student Portal is a C++-based application designed to manage basic student-related information and provide a simple foundation for student management functionality.
 
 ## Prerequisites
-
-Before building the Student Portal application, make sure the following requirements are available:
-
 - A C++ compiler with support for modern C++ standards.
 - `g++` compiler for building the application from the command line.
 - A supported operating system such as Linux, macOS, or Windows with a suitable C++ development environment.
@@ -39,8 +36,10 @@ The project is organized to keep source code, documentation, and version-control
 student-portal/
 ├── README.md
 ├── .gitignore
-├── main.cpp
+└── docs
+    └── student-info.json
 └── src/
+    └── main.cpp
     └── [additional source files]
 ```
 
