@@ -1,20 +1,23 @@
 #include <iostream>
 #include <string>
 
-void printWelcomeMessage() {
-    std::cout << "      Welcome to Git !       " << std::endl;
+void printWelcomeMessage()
+{
+    std::cout << "Welcome to the Student Portal Application! " << std::endl;
 }
 
-
-void greetUser() {
+void greetUser()
+{
     std::cout << "Hello, Developer!" << std::endl;
 }
 
-int addNumbers(int a, int b) {
+int addNumbers(int a, int b)
+{
     return a + b;
 }
 
-int main() {
+int main()
+{
     printWelcomeMessage();
     greetUser();
 
