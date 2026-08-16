@@ -18,3 +18,8 @@ bool isValidLanguage(const string &language)
 
   return Languages.count(language) > 0;
 }
+
+bool isValidTheme(bool darkMode)
+{
+  return darkMode == true || darkMode == false;
+}
