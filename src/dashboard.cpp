@@ -17,3 +17,16 @@ int completionPercentage(const DashboardStats &stats)
 
   return (stats.completedAssignments * 100) / stats.assignments;
 }
+
+string courseStatus(int courses)
+{
+  if (courses <= 0)
+  {
+    return "No courses registered";
+  }
+  if (courses < 4)
+  {
+    return "Light course load";
+  }
+  return "Active course load";
+}
