@@ -17,3 +17,19 @@ bool isValidProfile(const StudentProfile &profile)
          profile.semester >= 1 &&
          profile.semester <= 8;
 }
+
+int profileCompletion(const StudentProfile &profile)
+{
+  int completed = 0;
+
+  if (!profile.name.empty())
+    completed++;
+  if (!profile.email.empty())
+    completed++;
+  if (!profile.department.empty())
+    completed++;
+  if (profile.semester >= 1 && profile.semester <= 8)
+    completed++;
+
+  return completed * 25;
+}
