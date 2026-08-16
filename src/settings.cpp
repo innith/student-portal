@@ -28,3 +28,14 @@ void setEmailNotifications(UserSettings &settings, bool enabled)
 {
   settings.emailNotifications = enabled;
 }
+
+string settingsSummary(const UserSettings &settings)
+{
+  string theme = settings.darkMode ? "Dark" : "Light";
+  string notifications =
+      settings.emailNotifications ? "Enabled" : "Disabled";
+
+  return "Theme: " + theme +
+         ", Notifications: " + notifications +
+         ", Language: " + settings.language;
+}
