@@ -18,3 +18,28 @@ bool isAdmin(const string &username, const string &password)
   const string actualPassword = "admin@123";
   return (username == actualUsername) && (password == actualPassword);
 }
+bool authenticateUser(const string &username, const string &password)
+{
+  const string storedUsername = "student";
+  const string storedPassword = "Student@123";
+
+  return username == storedUsername && password == storedPassword;
+}
+
+string getLoginError(const string &username, const string &password)
+{
+  if (!validateUsrname(username))
+  {
+    return "Username must contain at least four characters.";
+  }
+
+  if (!validatePassword(password))
+  {
+    return "Password must contain at least eight characters.";
+  }
+  if (!authenticateUser(username, password))
+  {
+    return "Invalid username or password.";
+  }
+  return "";
+}
