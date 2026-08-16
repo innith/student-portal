@@ -39,3 +39,7 @@ string settingsSummary(const UserSettings &settings)
          ", Notifications: " + notifications +
          ", Language: " + settings.language;
 }
+bool isValidNotificationPreference(bool enabled)
+{
+  return enabled == true || enabled == false;
+}
