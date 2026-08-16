@@ -44,3 +44,10 @@ bool updateSemester(StudentProfile &profile, int semester)
   profile.semester = semester;
   return true;
 }
+
+string profileSummary(const StudentProfile &profile)
+{
+  return profile.name + " - " +
+         profile.department + " - Semester " +
+         to_string(profile.semester);
+}
