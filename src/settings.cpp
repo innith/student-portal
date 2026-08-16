@@ -23,3 +23,8 @@ bool isValidTheme(bool darkMode)
 {
   return darkMode == true || darkMode == false;
 }
+
+void setEmailNotifications(UserSettings &settings, bool enabled)
+{
+  settings.emailNotifications = enabled;
+}
