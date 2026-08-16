@@ -20,6 +20,17 @@ bool isValidRecord(const AcademicRecord &record)
          record.grade <= 10.0;
 }
 
+string classifyGrade(double grade)
+{
+  if (grade >= 9.0)
+    return "Excellent";
+  if (grade >= 7.0)
+    return "Good";
+  if (grade >= 5.0)
+    return "Pass";
+  return "Needs Improvement";
+}
+
 double calculateGPA(const vector<AcademicRecord> &records)
 {
   if (records.empty())
