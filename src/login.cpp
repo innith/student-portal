@@ -43,3 +43,13 @@ string getLoginError(const string &username, const string &password)
   }
   return "";
 }
+
+int recordLoginAttempt(bool successful, int currentAttempts)
+{
+  if (successful)
+  {
+    return 0;
+  }
+
+  return currentAttempts + 1;
+}
