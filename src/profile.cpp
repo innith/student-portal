@@ -51,3 +51,8 @@ string profileSummary(const StudentProfile &profile)
          profile.department + " - Semester " +
          to_string(profile.semester);
 }
+
+bool isValidStudentName(const string &name)
+{
+  return !name.empty() && name.length() >= 2;
+}
