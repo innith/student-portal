@@ -53,3 +53,18 @@ double calculateGPA(const vector<AcademicRecord> &records)
   }
   return totalGradePoints / totalCredits;
 }
+
+int countFailedCourses(const vector<AcademicRecord> &records)
+{
+  int failed = 0;
+
+  for (const AcademicRecord &record : records)
+  {
+    if (isValidRecord(record) && record.grade < 5.0)
+    {
+      failed++;
+    }
+  }
+
+  return failed;
+}
