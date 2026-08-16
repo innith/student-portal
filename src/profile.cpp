@@ -33,3 +33,14 @@ int profileCompletion(const StudentProfile &profile)
 
   return completed * 25;
 }
+
+bool updateSemester(StudentProfile &profile, int semester)
+{
+  if (semester < 1 || semester > 8)
+  {
+    return false;
+  }
+
+  profile.semester = semester;
+  return true;
+}
