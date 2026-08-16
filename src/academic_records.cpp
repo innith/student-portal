@@ -68,3 +68,10 @@ int countFailedCourses(const vector<AcademicRecord> &records)
 
   return failed;
 }
+
+string academicSummary(const vector<AcademicRecord> &records)
+{
+  return "Courses: " + to_string(records.size()) +
+         ", GPA: " + to_string(calculateGPA(records)) +
+         ", Failed: " + to_string(countFailedCourses(records));
+}
